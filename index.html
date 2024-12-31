@@ -71,13 +71,15 @@
 
         .video-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr; /* Stack videos vertically */
             gap: 2rem;
             margin-top: 1rem;
         }
 
         video {
             width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            max-height: 400px; /* Optional: Set a maximum height for consistent size */
             border-radius: 8px;
         }
     </style>
