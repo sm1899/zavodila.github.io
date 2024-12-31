@@ -66,12 +66,18 @@
 
         .video-section {
             text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
         }
 
         video {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
+            width: 100%;
             border-radius: 8px;
         }
     </style>
@@ -84,42 +90,57 @@
         <div class="gallery">
             <div class="original-image">
                 <h3>Original Image</h3>
-                <img src="images/original.jpg" alt="Original image">
+                <img src="src/og.jpg" alt="Original image">
             </div>
             
             <div class="edited-image">
                 <h3>Edit Version 1</h3>
-                <img src="images/edited1.jpg" alt="Edited version 1">
+                <img src="src/a1.png" alt="Edited version 1">
             </div>
             
             <div class="edited-image">
                 <h3>Edit Version 2</h3>
-                <img src="images/edited2.jpg" alt="Edited version 2">
+                <img src="src/c1.png" alt="Edited version 2">
             </div>
             
             <div class="edited-image">
                 <h3>Edit Version 3</h3>
-                <img src="images/edited3.jpg" alt="Edited version 3">
+                <img src="src/e1.jpg" alt="Edited version 3">
             </div>
             
             <div class="edited-image">
                 <h3>Edit Version 4</h3>
-                <img src="images/edited4.jpg" alt="Edited version 4">
+                <img src="src/h1.jpeg" alt="Edited version 4">
             </div>
             
             <div class="edited-image">
                 <h3>Edit Version 5</h3>
-                <img src="images/edited5.jpg" alt="Edited version 5">
+                <img src="src/s1.jpeg" alt="Edited version 5">
+            </div>
+
+            <div class="edited-image">
+                <h3>Edit Version 5</h3>
+                <img src="src/w1.jpeg" alt="Edited version 6">
             </div>
         </div>
     </section>
 
-    <section class="video-section">
-        <h2>Video Example</h2>
-        <video controls>
-            <source src="video/example.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
+    <h2>Video Examples</h2>
+    <div class="video-container">
+        <div class="video-section">
+            <h3>Video Example 1</h3>
+            <video controls>
+                <source src="src/v1.mp4" type="src/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-section">
+            <h3>Video Example 2</h3>
+            <video controls>
+                <source src="src/v2.mp4" type="src/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 </body>
 </html>
